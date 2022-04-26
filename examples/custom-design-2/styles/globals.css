@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #00c475 !important;
+}
+
+.wallet-adapter-modal-container-custom {
+  display: flex;
+  position: static;
+  margin-right: 2em;
+  margin-top: 6rem;
+  min-height: calc(100vh - 6rem); /* 100vh - 2 * margin */
+  align-items: start;
+  justify-content: end;
+}
+
+@media (max-width: 480px) {
+  .wallet-adapter-modal-container-custom {
+      margin: 1rem;
+      min-height: calc(100vh - 2rem); /* 100vh - 2 * margin */
+  }
+}
