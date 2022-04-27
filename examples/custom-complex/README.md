@@ -22,7 +22,7 @@ yarn dev -p 7504
 
 ## Screenshots
 
-### 1. Sample landing screen with Connect Wallet button.
+### 1. Sample landing screen with Connect Wallet button
 <br>
 
 ![Screenshot](./images/L1.png)

@@ -18,7 +18,7 @@ yarn dev -p 7502
 
 ## Screenshots
 
-### 1. Sample landing screen with Connect Wallet button.
+### 1. Sample landing screen with Connect Wallet button
 <br>
 
 
@@ -29,12 +29,12 @@ yarn dev -p 7502
 
 ![Screenshot](./images/L2.png)
 
-### 3. Wallet list with Streambird wallet highlighted.
+### 3. Wallet list with Streambird wallet highlighted
 <br>
 
 ![Screenshot](./images/L3.png)
 
-### 4. Streambird login screen when Streambird wallet selected.  
+### 4. Streambird login screen when Streambird wallet selected
 <br>
 
 ![Screenshot](./images/L4.png)
