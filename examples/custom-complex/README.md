@@ -27,12 +27,12 @@ yarn dev -p 7504
 
 ![Screenshot](./images/L1.png)
 
-### 2. Modal shown with Get Started button
+### 2. Modal shown with Login with email button
 <br>
 
-![Screenshot](./images/L2.png)
+![Screenshot](./images/L21.png)
 
-### 3. After Get Started is clicked the login screen is shown
+### 3. After Login with email is clicked the login screen is shown
 <br>
 
 ![Screenshot](./images/L3.png)
