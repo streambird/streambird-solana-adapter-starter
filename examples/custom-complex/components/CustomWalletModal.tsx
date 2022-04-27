@@ -151,36 +151,36 @@ export const CustomWalletModal: FC<CustomWalletModalProps> = ({ className = '', 
                             <>
                                 <h1 className="wallet-adapter-modal-title">Connect a wallet on Solana to continue</h1>
                                 <img src="./wallet.png" className="w-16 h-16" title="" alt="" />
-                                <div className="w-full pl-10 pr-10">
-                                <button
-                                  onClick={(event) => handleStart(event)}
-                                  type="button"
-                                  className="w-full mt-8 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
-                                  Get Started
-                                </button>
-                                </div>
                                 <ul className="wallet-adapter-modal-list" style={{marginTop: 30}}>
-                                  {otherWallets.length ? (
-                                    <Collapse expanded={expanded} id="wallet-adapter-modal-collapse mt-5">
-                                      {installedWallets.map((wallet) => (
+                                    {installedWallets.map((wallet) => (
                                         <WalletListItem
-                                          key={wallet.adapter.name}
-                                          handleClick={(event) => handleWalletClick(event, wallet.adapter.name)}
-                                          wallet={wallet}
+                                            key={wallet.adapter.name}
+                                            handleClick={(event) => handleWalletClick(event, wallet.adapter.name)}
+                                            wallet={wallet}
                                         />
-                                      ))}
-                                      {otherWallets.map((wallet) => (
-                                        <WalletListItem
-                                          key={wallet.adapter.name}
-                                          handleClick={(event) =>
-                                            handleWalletClick(event, wallet.adapter.name)
-                                          }
-                                          tabIndex={expanded ? 0 : -1}
-                                          wallet={wallet}
-                                        />
-                                      ))}
-                                    </Collapse>
-                                  ) : null}
+                                    ))}
+                                    <div className="w-full pl-6 pr-6 pb-5">
+                                        <button
+                                        onClick={(event) => handleStart(event)}
+                                        type="button"
+                                        className="w-full mt-5 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+                                        Login with email
+                                        </button>
+                                    </div>
+                                    {otherWallets.length ? (
+                                        <Collapse expanded={expanded} id="wallet-adapter-modal-collapse">
+                                            {otherWallets.map((wallet) => (
+                                                <WalletListItem
+                                                    key={wallet.adapter.name}
+                                                    handleClick={(event) =>
+                                                        handleWalletClick(event, wallet.adapter.name)
+                                                    }
+                                                    tabIndex={expanded ? 0 : -1}
+                                                    wallet={wallet}
+                                                />
+                                            ))}
+                                        </Collapse>
+                                    ) : null}
                                 </ul>
                                 {otherWallets.length ? (
                                     <button
@@ -215,7 +215,7 @@ export const CustomWalletModal: FC<CustomWalletModalProps> = ({ className = '', 
                                         className="wallet-adapter-modal-middle-button"
                                         onClick={(event) => handleWalletClick(event, getStartedWallet.adapter.name)}
                                     >
-                                        Get started
+                                        Login with email
                                     </button>
                                 </div>
                                 {otherWallets.length ? (

@@ -217,7 +217,7 @@ export const CustomWalletModal: FC<CustomWalletModalProps> = ({ className = '', 
                                         className="wallet-adapter-modal-middle-button"
                                         onClick={(event) => handleWalletClick(event, getStartedWallet.adapter.name)}
                                     >
-                                        Get started
+                                        Login with email
                                     </button>
                                 </div>
                                 {otherWallets.length ? (
